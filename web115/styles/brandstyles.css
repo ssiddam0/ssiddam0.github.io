@@ -1,0 +1,169 @@
+.body {
+	/*background-color: #00AEEF;
+	background-color: #53aa79;*/
+	font-family: "Franklin Gothic Medium";
+	color: brown;
+	/*max-width: 1100px;*/
+	/*width: 100%;
+	height: 100%; */
+	margin: auto;
+	background: url("../images/picassoimg.jpg");
+	background-position: center;
+    background-repeat: repeat;
+    /*background-size: cover;*/
+}
+
+.header {
+	
+	max-width: 900px;
+	height: 115px;
+	/*background-color: #f2f2f2;*/
+	/*border: 1px;*/
+	margin: 20px auto 0 auto;
+	/*background-color: rgb(223,255,239);*/
+	background-color: #ec2b7a;
+	text-align: center;
+}
+
+.logo {
+	width: 150px;
+	float: left;
+	padding-top: 1em;
+	padding-left: 5em;
+}
+
+.brandheading {
+	color: #00AEEF;
+	font-size: 50px;
+}
+
+.tagline {
+	color: #ec2b7a;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 100px;
+}
+
+#body-content {
+	box-sizing: border-box;
+	padding: 0px 10px;
+	max-width:900px;
+	margin: 0 auto;
+	font-family: "Franklin Gothic Medium";
+	background-color: #88D8AB;
+	
+}
+
+.headings {
+	font-family: serif;
+	color: #FFFFFF;
+}
+
+.styleth {
+	/*background-color: #00AEEF;*/
+	height: 50px;
+	margin: 10px 0 10px 0;
+	padding: 5px 0 5px 0;
+	/*color: white;*/
+	font-weight: bold;
+	font-size: 2em;
+}
+.th{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+table {
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+th,
+td {
+	border: 2px solid #8c6b48;
+}
+
+.altborder {
+	width: 70%;
+}
+
+.left {
+	text-align: left;
+}
+
+ul li {
+	/*list-style-position:inside;*/
+}
+
+a:link, a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: gold;
+}
+
+.button1 {
+	box-sizing: border-box;
+	background-color: #ec2b7a;
+	color: white;
+	max-width: 300px;
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 10px 10px;
+}
+
+label {
+	width: 150px;
+	font-size: 20px;
+	display: inline-block;
+}
+
+input[type=text] {
+	width: 30%;
+	padding: 5px 10px;
+	border: 1px solid black;
+	border-radius: 4px;
+	margin: 2px 0;
+	font-size: 15px;
+}
+
+input[type=submit] {
+	width: 15%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 10px;
+	margin: 5px 0 0 285px;
+	border: 1px solid white;
+}
+
+form {
+	padding: 20px 0 0 0;
+	/*margin: 10px;*/
+}
+
+footer {
+	width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+	/*padding: 0.5em;*/
+	text-align: center;
+	background-color: #ec2b7a;
+	color: white;
+	
+}
+
+footer img {
+	border: 0;
+	width: 88px;
+	height: 31px;
+}
+
+header,
+main,
+footer {
+   overflow: auto;
+}

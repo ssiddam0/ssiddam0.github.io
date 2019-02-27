@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Magic Land Fizz Buzz 2</title>
+      <link rel="stylesheet" href="styles/brandstyles.css" type="text/css">
+      <script src="scripts/fizzbuzz2.js"></script>
+   </head>
+   <body class="body">
+      <header class="header"> 
+         <div>
+		    <img src="images/magicland.png" alt="Magic Land"/>
+         </div>
+      </header>
+      <main id="body-content">
+         <h2 id="greeting">Welcome to Magic Land's Fizz Buzz 2!</h2>
+         <form onsubmit="fizzBuzz2(); return false;">
+            <label for="first_name">First Name:</label>
+            <input id="first_name" name="first_name" type="text" required placeholder ="Please input your first name"><br>
+            <label for="last_name">Last Name: </label>
+            <input id="last_name" name="last_name" type="text" required placeholder ="Please input your last name"><br>
+            <label for="middle_initial">Middle Initial:</label>
+            <input id="middle_initial" name="middle_initial" type="text" placeholder ="First letter of your middle name" maxlength="1"><br>
+            <input type="submit" value="Submit" onclick="return greetCustomer();" ><br><br>
+            <br><br>
+            <p id="brand_msg"> </p>
+         </form>
+      </main>
+      <footer>
+	     &copy; 2019 - designed by Sowjanya Siddamshetty<br/><br/>
+         <a href = "http://validator.w3.org/check?uri=referer" target="_blank">
+         <img src ="images/html5-valid-btn.gif"  alt ="Validate HTML!" />
+         </a> 
+         <a href = "http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+         <img src = "images/css-valid-btn.gif" alt = "Validate CSS!" />
+         </a><br/>
+      </footer>
+   </body>
+</html>

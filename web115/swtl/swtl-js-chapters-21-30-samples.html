@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SWTL JS 21-30</title>
+      <link rel="stylesheet" href="../styles/brandstyles.css" type="text/css">
+      <script>
+         function chapter21(){
+         var classesOffered = ['drawing','painting','diy'];
+         var favArt = prompt("What\'s your favorite type of Art? \n For ex: drawing, painting, diy etc");
+		 favArt = favArt.toLowerCase();
+         if(favArt.length <1){
+         favArt='Nothing specific? We can figure it out.';
+         alert(favArt);
+         }
+         else{
+         for(var i=0;i<=classesOffered.length;i++){
+         if(favArt ===  classesOffered[i]){
+         alert(favArt+", It's one of our finest classes being offered");
+         
+         }
+         }
+         }
+         }
+         function chapter22(){
+         var studentName = prompt("Please enter your name");
+		 studentName = studentName.charAt(0).toUpperCase()+studentName.slice(1);
+         alert("Hello " + studentName + ", You are going to have a fun filled art class!");
+         }
+         function chapter23(){
+		 var text = "Magic wand .. intelligence having fun";
+         var firstChar = text.indexOf("wand");
+		 if(firstChar != -1)
+			text = text.slice(0, firstChar) + "Paint Brush" + text.slice(firstChar+4);
+            alert(text);
+         }
+         
+         function chapter25(){
+         var text = "Magic Land ...LET THE MAGIC BEGIN";
+		 text = text.replace("...LET THE MAGIC BEGIN",", create your own magic");
+		 text = text.replace(/Land/g, "Paint Brush");
+         
+         alert(text);
+         }
+         
+        
+      </script>
+   </head>
+   <body class="body">
+      <header class="header">
+         <!--<div class="logo">
+            <img src="images/paintbrush.png" alt="paintbrush"/>
+         </div>-->
+         <div>
+		    <img src="../images/magicland.png" alt="Magic Land"/>
+            <!--<span class="brandheading"> Magic Wand </span><br>
+            <span class="tagline">... intelligence having fun</span>-->
+         </div>
+      </header>
+      <main id="body-content">
+         <table class="altborder">
+            <thead>
+               <tr>
+                  <th class="styleth">SWTL JS Chapters 21-30 Samples</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>
+                     <h3>Chapter 21 - Changing case</h3>
+                     <p>var favArt = prompt("What\'s your favorite type of Art? \n For ex: drawing, painting, diy etc");<br> favArt = favArt.toLowerCase();</p>
+                     <button class="button1" onclick="chapter21()">Change Case</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 22 - String Methods</h3>
+                     <p>last_name = last_name.charAt(0).toUpperCase()+last_name.slice(1);</p>
+                     <button class="button1" onclick="chapter22()">Click Me</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 23 - String Methods</h3>
+                     <p>var text = "Magic Land ...LET THE MAGIC BEGIN";<br>
+							var firstChar = text.indexOf("Land");<br>
+							if(firstChar != -1)<br>
+							text = text.slice(0, firstChar) + "Paint Brush" + text.slice(firstChar+4);<br>
+							alert(text);</p>
+                     <button class="button1" onclick="chapter23()">Magic Land</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 24 - charAt()</h3>
+                     <p>last_name = last_name.charAt(0).toUpperCase()+last_name.slice(1);<br>
+					 charAt(0) - identifies the first character of a string</p>
+                     
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 25 - String Methods</h3>
+                     <p>var text = "Magic Land ...LET THE MAGIC BEGIN";<br>
+						text = text.replace("...LET THE MAGIC BEGIN","create your own magic");<br>
+						text = text.replace(/Land/g, "Paint Brush");
+                     </p>
+                     <button class="button1" onclick="chapter25()">Click Me</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 26 - Math Methods</h3>
+					 <p>Math.round(), Math.ceil(), Math.floor()</p>
+					 <script>
+					 var totFee = 189.569;
+					 document.write("Total fee is: "+ totFee+"<br>");
+					 document.write("After rounding the Fee: "+Math.round(totFee)+"<br>");
+					 document.write("Rounding up: "+Math.ceil(totFee)+"<br>");
+					 document.write("Rounding down: "+Math.floor(totFee)+"<br>");
+					 </script>
+                     
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 27 - Math random </h3>
+                     <p> Math.random()</p>
+                     <script>
+					 var autoNum = Math.random()*100;
+					 
+					 document.write('<p> Auto number generated by Math.random()*100:  '+autoNum+'</p>'); 
+					 </script>
+					  
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 28 - String to Number</h3>
+                     <p>parseInt() - parses a string argument and returns an integer;<br>var qualifyingAge = parseInt(currentAge) + 1;
+					 <br>parseFloat() - parses an argument and returns a floating point number.
+					 <br>var discount = parseFloat("0.2");</p>
+                     
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 29 - Number to String</h3>
+                     <p>toString() -  method returns a string representing the specified Number object.<br>var numberAsNumber = 1234;<br>
+
+					var numberAsString = numberAsNumber.toString();</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 30 - toFixed()</h3>
+                     <p>formats a number using fixed-point notation.<br>
+						
+						var discount = 5.56789;<br>
+						discount = discount.toFixed(2);
+					</p>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </main>
+      <footer>
+         &copy; 2019 - designed by Sowjanya Siddamshetty<br/><br/>
+         <a href = "http://validator.w3.org/check?uri=referer" target="_blank">
+         <img src ="../images/html5-valid-btn.gif"  alt ="Validate HTML!" />
+         </a> 
+         <a href = "http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+         <img src = "../images/css-valid-btn.gif" alt = "Validate CSS!" />
+         </a><br/>
+      </footer>
+   </body>
+</html>
