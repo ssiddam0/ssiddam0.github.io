@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SWTL JS 81-89</title>
+      <link rel="stylesheet" href="../styles/brandstyles.css" type="text/css">
+      <script src = "../scripts/swtl81-89script.js"></script>	
+   </head>
+   <body class="body">
+      <header class="header">
+         <!--<div class="logo">
+            <img src="images/paintbrush.png" alt="paintbrush"/>
+            </div>-->
+         <div>
+            <img src="../images/magicland.png" alt="Magic Land"/>
+            <!--<span class="brandheading"> Magic Wand </span><br>
+               <span class="tagline">... intelligence having fun</span>-->
+         </div>
+      </header>
+      <main id="body-content">
+         <table class="altborder" id="swtltable">
+            <thead>
+               <tr>
+                  <th class="styleth">SWTL JS Chapters 81-89 Samples</th>
+               </tr>
+            </thead>
+            <tbody id="tbody">
+               <tr>
+                  <td>
+                     <h3>Chapter 81</h3>
+						<p>Click the button below to check for the popup blocker</p>
+						<button class="button1" onclick="checkForPopBlocker()">Click Me!!</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 82</h3>
+						<form onsubmit="return checkForName();">
+							Please enter your name
+							<input type="text" id="name">
+							<input type="submit" value="Submit" >
+					    </form>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3 id="chapter83">Chapter 83</h3>
+                     <form onsubmit="return checkForClass('class');">
+						Register for Class
+						<select id="class">
+						<option value="" selected="selected">Select a Class</option>
+						<option value="bd">Beg Drawing</option>
+						<option value="ad">Adv Drawing</option>
+						<option value="bp">Beg Painting</option>
+						<option value="ap">Adv Painting</option>
+						</select>
+						<input type="submit" value="Submit">
+					 </form>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 84</h3>  
+					 <form onsubmit="return validateRadios('r1');">
+						<input type="radio" name="r1" value="male">Male
+						<input type="radio" name="r1" value="female">Female<br>
+						<input type="submit" value="Submit">
+					 </form>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+				     <h3>Chapter 85</h3>  
+                     <form onsubmit="return validateZipcode();">
+						<input type="text" id="zip" placeholder="enter zipcode here" maxlength="5">
+						<input type="submit" value="Submit">
+					 </form>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 86</h3>
+					 <form onsubmit="return checkEmail('address');">
+						<input type="text" id="address" placeholder="example@gmail.com">
+						<input type="submit" value="Submit">
+				     </form>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                      <h3>Chapter 87</h3>
+                      <p>function greetWorld(){try{aler('Hello!');}
+					  catch(err){alert(err);}}</p>
+					  <p onclick="greetWorld()">Click here to find the error</p>
+                     
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 88</h3>
+					<form onsubmit="return checkPassword();">
+					  Enter a password<br>
+					  (8 characters, at least 1 number, no spaces)<br>
+					  <input type="password" id="password">
+					  <input type="submit" value="Submit">
+					</form>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 89</h3>
+					 <!--<input type="text" id="address1" placeholder="example@gmail.com">-->
+					 <input type="button" value="Click" id="button1"><br>
+                  </td>
+               </tr>
+               
+            </tbody>
+         </table>
+      </main>
+      <footer>
+         &copy; 2019 - designed by Sowjanya Siddamshetty<br/><br/>
+         <a href = "http://validator.w3.org/check?uri=referer" target="_blank">
+         <img src ="../images/html5-valid-btn.gif"  alt ="Validate HTML!" />
+         </a> 
+         <a href = "http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+         <img src = "../images/css-valid-btn.gif" alt = "Validate CSS!" />
+         </a><br/>
+      </footer>
+   </body>
+</html>

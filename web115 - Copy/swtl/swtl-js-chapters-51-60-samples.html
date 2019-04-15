@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SWTL JS 51-60</title>
+      <link rel="stylesheet" href="../styles/brandstyles.css" type="text/css">
+      <script src = "../scripts/swtl51-60script.js"></script>	
+   </head>
+   <body class="body">
+      <header class="header">
+         <!--<div class="logo">
+            <img src="images/paintbrush.png" alt="paintbrush"/>
+            </div>-->
+         <div>
+            <img src="../images/magicland.png" alt="Magic Land"/>
+            <!--<span class="brandheading"> Magic Wand </span><br>
+               <span class="tagline">... intelligence having fun</span>-->
+         </div>
+      </header>
+      <main id="body-content">
+         <table class="altborder" id="swtltable">
+            <thead>
+               <tr>
+                  <th class="styleth">SWTL JS Chapters 51-60 Samples</th>
+               </tr>
+            </thead>
+            <tbody id="tbody">
+               <tr>
+                  <td>
+                     <h3>Chapter 51</h3>
+                     <p id="concept"> Welcome to Magic Land. If you are looking for art classes that will inspire you and fulfill you, look no further. <a href="javascript:void(0);" onclick="chapter51()"><em>Click for more</em></a>
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 52</h3>
+                     <p><input type="radio" name="favart" value="drawing" id= "drawchk" onclick="showHideDiv()">Drawing
+                        <input type="radio" name="favart" value="painting" id="paintchk" onclick="showHideDiv()">Painting<br>
+                     </p>
+                     <div class="center">
+                        <img id="drawimg" src="../images/drawing.jpg" alt="palm tree1" style="display: none;"/>
+                        <img id="paintimg" src="../images/painting.jpg" alt="palm tree2" style="display: none"/>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 53</h3>
+                     <p>
+                        Hover over image to find Kid's magic<br>
+                        <img src="../images/before.png" id="before" onmouseover="swappic(id,'../images/after.png');"  onmouseout="swappic(id,'../images/before.png');" alt="panda"/>
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 54
+                     </h3>
+                     <p>function highlightTitle(){
+                        document.getElementById('brandname').className= "changefont";
+                     </p>
+                     }
+                     <p id="brandname" onclick="highlightTitle();">Magic Land
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 55</h3>
+                     <a href="javascript:void(0)" onclick="moveRight()" id="place1">Move Right</a><br>
+                     <a href="javascript:void(0)" onclick="moveCenter()" id="place2" style="display: none">Back</a><br>
+                     <img id="drawimg1" src="../images/drawing.jpg" alt="palm tree1"/>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 56</h3>
+                     <p>Would you like to change the text to italics?</p>
+                     <p>
+                        <button class="button1" onclick="applyItalicsFont()">Click Me</button>
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 57</h3>
+                     <p>Would you like to change the table body background to blue?</p>
+                     <button class="button1" onclick="changeBackground()">Click Me</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 58</h3>
+                     <p>The DOM</p>
+                     <img src="../images/dom1.png" alt="dom tree1"/>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 59</h3>
+                     <p>The DOM: Parents and children</p>
+                     <img src="../images/dom.jpg" alt="dom tree2"/>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 60</h3>
+                     <a href="javascript:void(0);" onclick="getTitleBackground()">Click here to get the page title</a>
+                     <p id="swtlTitle"></p>
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </main>
+      <footer>
+         &copy; 2019 - designed by Sowjanya Siddamshetty<br/><br/>
+         <a href = "http://validator.w3.org/check?uri=referer" target="_blank">
+         <img src ="../images/html5-valid-btn.gif"  alt ="Validate HTML!" />
+         </a> 
+         <a href = "http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+         <img src = "../images/css-valid-btn.gif" alt = "Validate CSS!" />
+         </a><br/>
+      </footer>
+   </body>
+</html>

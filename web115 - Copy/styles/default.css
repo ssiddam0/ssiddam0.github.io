@@ -1,0 +1,55 @@
+body
+{
+  
+  margin: 0.1em;
+  padding: 0.1em;
+  font-family: "Franklin Gothic Medium";
+  color: brown;
+  background-color: #88D8AB;
+  
+}
+/*figure {
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	border: thin silver solid;
+}
+figurecaption{
+	text-align: center;
+	font-size: 12px;
+	
+}*/
+h1{
+	text-align: center;
+}
+/*format border for the main element */
+.main{
+	/*border: 0.1em solid black;*/
+	margin: 1px 50px;
+}
+/*format space between the list index items, li with in the main tag*/
+.main li{
+	padding: 0 0 5px 0;
+}
+/*footer format*/
+footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+/*format external links */
+.links{
+	text-align: center;
+}
+
+a:link, a:visited {
+	color: brown;
+	text-decoration: none;
+	font-style: italic;
+}
+
+a:hover {
+	color: purple;
+}

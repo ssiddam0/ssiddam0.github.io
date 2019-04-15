@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>SWTL JS 41-50</title>
+      <link rel="stylesheet" href="../styles/brandstyles.css" type="text/css">
+      <script src = "../scripts/swtl41-50script.js"></script>	
+   </head>
+   <body class="body">
+      <header class="header">
+         <!--<div class="logo">
+            <img src="images/paintbrush.png" alt="paintbrush"/>
+            </div>-->
+         <div>
+            <img src="../images/magicland.png" alt="Magic Land"/>
+            <!--<span class="brandheading"> Magic Wand </span><br>
+               <span class="tagline">... intelligence having fun</span>-->
+         </div>
+      </header>
+      <main id="body-content">
+         <table class="altborder">
+            <thead>
+               <tr>
+                  <th class="styleth">SWTL JS Chapters 41-50 Samples</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>
+                     <h3>Chapter 41 - while loops</h3>
+                     <p>var totClasses = 2;
+                        var noOfClassesAttended =1;
+                        while(noOfClassesAttended&lt;=totClasses)
+                        {
+                        alert('Keep on painting..');
+                        noOfClassesAttended++;
+                        }
+                     </p>
+                     <button class="button1" onclick="chapter41()">Click Me</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 42 - do..while loops</h3>
+                     <p>var totClasses = 1;
+                        var noOfClassesAttended =0;
+                        while(noOfClassesAttended&lt;=totClasses)
+                        {
+                        alert('Keep on painting..');
+                        noOfClassesAttended++;
+                        }
+                     </p>
+                     <button class="button1" onclick="chapter42()">Click Me</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 43 - Placing scripts</h3>
+                     <p>
+                        function sayHi(){ alert("Hello Class!"); }
+                     </p>
+                     <button class="button1" onclick="chapter43()">Click Me</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 44 - Commenting
+                     </h3>
+                     <p>/*Creates an array of days starting with "Sun" and assigns it to dayNames.*/<br>
+                        var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];<br>
+                        var now = new Date();//creates date object with current date&time
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 45 - Events: link</h3>
+                     <p>href="JavaScript:void(0)" onClick="var greet='Hello, Welcome to Magic Land!!'; alert(greet);"</p>
+                     <p><a href="JavaScript:void(0)" onClick="alert('Hello, Welcome to Magic Land!!');">Click Me</a>
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 46 - Events: button</h3>
+                     <p>input type="button" value="Click Me" onClick="alert('Hello world!');"</p>
+                     <p><input class="button1" type="button" value="Click Me" onClick="alert('Hello, Welcome to Magic Land!');">
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 47 - Events: mouse</h3>
+                     <p>button class="button1" onmouseover="chapter47()" onmouseout="mouseOutFn()"></p>
+                     <button id="hover" class="button1" onmouseover="chapter47()" onmouseout="mouseOutFn()">Hover Me</button>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 47 - Events: fields</h3>
+                     <p>input type="text" size="30" onFocus="makeFieldRed();" onBlur="makeFieldWhite();"</p>
+                     Middle Name: <input id="focusField" type="text" maxlength="1" onFocus="makeFieldRed(this.id);" onBlur="makeFieldWhite(this.id);">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 49 - Reading field values</h3>
+                     <p>document.getElementById(id).value=document.getElementById(id).value.toUpperCase();</p>
+                     <p>Middle Name: <input id="focusField1" type="text" maxlength="1" placeholder="input your middle initial" onchange="capitalize(this.id);"></p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <h3>Chapter 50 - Setting field values</h3>
+                     <p id="greeting">var first_name = document.getElementById('first_name').value;<br>
+                        var last_name = document.getElementById('last_name').value;<br>
+                        var greet = 'Welcome to Magic Land, ' + first_name + ' ' +  last_name + '!';<br>
+                        document.getElementById('greeting').innerHTML = greet;
+                     </p>
+                     <p><input id="first_name" name="first_name" type="text" placeholder="input your first name"><br>
+                        <input id="last_name" name="last_name" type="text" placeholder="input your last name"><br>
+                        <button class="button1" onclick="return greetCustomer();">Submit</button>	
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+      </main>
+      <footer>
+         &copy; 2019 - designed by Sowjanya Siddamshetty<br/><br/>
+         <a href = "http://validator.w3.org/check?uri=referer" target="_blank">
+         <img src ="../images/html5-valid-btn.gif"  alt ="Validate HTML!" />
+         </a> 
+         <a href = "http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+         <img src = "../images/css-valid-btn.gif" alt = "Validate CSS!" />
+         </a><br/>
+      </footer>
+   </body>
+</html>

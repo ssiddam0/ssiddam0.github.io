@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Magic Land Fizz Buzz 4</title>
+      <link rel="stylesheet" href="styles/brandstyles.css" type="text/css">
+      <script src="scripts/fizzbuzz4.js"></script>
+   </head>
+   <body class="body">
+      <header class="header"> 
+         <div>
+		    <img src="images/magicland.png" alt="Magic Land"/>
+         </div>
+      </header>
+      <main id="body-content">
+		 <h2 id="title">Fizz Buzz 4</h2>		
+         <h3 id="greeting">Welcome to Magic Land!</h3>
+         <form onsubmit="fizzBuzz4(); return false;">
+            Please enter your name below:<br>
+            <input id="first_name" name="first_name" type="text" required placeholder ="First Name">
+            
+            <input id="last_name" name="last_name" type="text" required placeholder ="Last Name">
+            
+            <input id="middle_initial" name="middle_initial" type="text" placeholder ="Middle Initial" maxlength="1"><br><br>
+			Please enter 3 numbers of your choice:<br>
+			<input type="number" id="number1" value="3">
+			<input type="number" id="number2" value="5">
+			<input type="number" id="number3" value="7"><br><br>
+			Please enter 3 words of your choice:<br>
+			<input type="text" id="word1" value="water">
+			<input type="text" id="word2" value="colors">
+			<input type="text" id="word3" value="painting"><br><br>
+			How high do you want to count?<br>
+			<input type="number" id="count" value="125"><br><br>
+			Default Word:<br>
+			<input type="text" id="word4" value="bang"><br><br>
+
+            <input type="submit" value="Submit" onclick="return greetCustomer();" ><br>
+            <p id="brand_message"> </p>
+         </form>
+      </main>
+      <footer>
+	     &copy; 2019 - designed by Sowjanya Siddamshetty<br/><br/>
+         <a href = "http://validator.w3.org/check?uri=referer" target="_blank">
+         <img src ="images/html5-valid-btn.gif"  alt ="Validate HTML!" />
+         </a> 
+         <a href = "http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+         <img src = "images/css-valid-btn.gif" alt = "Validate CSS!" />
+         </a><br/>
+      </footer>
+   </body>
+</html>
